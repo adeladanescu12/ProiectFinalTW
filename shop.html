@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>untold.shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js"></script>
 </head>
 <body>
-    
+    <div>
+        <h1>FORMULAR</h1>
+        <form>
+            <label>Date Personale</label>
+            <input type="nume" placeholder="Nume..." name="nume" required/>
+            <input type="prenume" placeholder="Prenume..." name="nume" required/>
+            <input type="email" placeholder="Email..." name="email" required/>
+            <input type="password" value="secret" required/>
+            <label for="pozaProfil" >Alege o poza de profil:</label>
+            <input type="file" id="pozaProfil" name="poza" accept="image/png, image/jpeg"/>
+            <input type="date" placeholder="Data nasteri..." />
+            
+            <input type="radio" name="gen" id="Feminin"/>
+            <label for="feminin">feminin</label>
+            <input type="radio" name="gen" id="Masculin"/>
+            <label for="masculin">masculin</label>
+
+            <label>Bilete</label>
+            <label>Alege tipul biletului:</label>
+            <select>
+                <option>General Acces Basic</option>
+                <option>Risk-free</option>
+                <option>VIP</option>
+            </select>
+            <label>Numar bilete</label>
+            <input type="number" max="11" required/>
+            
+
+            <input type="checkbox" id="terms"/>
+            <label for="Checkbox">Sunt de acord cu termenii si conditiile</label>
+            
+            <input type="reset"/>
+            <input type="submit"/>
+          
+          </form>
+    </div>
 </body>
 </html>
