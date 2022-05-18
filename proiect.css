@@ -1,0 +1,61 @@
+*
+{
+    padding:0.5;
+    margin:0.5;
+}
+
+header img{
+    position: relative;
+    height: fit-content;
+}
+
+body{
+    background-color: rgb(200, 170, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.meniu
+{
+    display: flex;
+    line-height: 50px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.meniu ul
+{
+    display: inline-flex;
+}
+.meniu ul li
+{
+    width:150px;
+    padding:20px;
+    margin:20px;
+}
+
+.submeniu
+{
+    display:none;
+}
+
+.meniu ul li:hover .submeniu{
+    display:block;
+    
+}
+
+.meniu ul li:hover .submeniu ul{
+    display:block;
+    margin: 5px;
+}
+
+.informatii {
+    border: 2px solid;
+    margin: 5px;
+    padding: 5px;
+  }
+
+.informatii .continut h1 {
+    font-size: 1.2em;
+  }
+
+

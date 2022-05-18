@@ -9,41 +9,50 @@
     <script src="shop.js"></script>
 </head>
 <body>
+    <p id="Hello">WELCOME TO UNTOLD!</p>
     <div>
-        <h1>FORMULAR</h1>
+        <h1>FORM</h1>
         <form>
-            <label>Date Personale</label>
-            <input type="nume" placeholder="Nume..." name="nume" required/>
-            <input type="prenume" placeholder="Prenume..." name="nume" required/>
+            <label>Personal Data</label>
+            <br>
+            <input type="nume" placeholder="Name..." name="nume" required/>
+            <input type="prenume" placeholder="Surname..." name="prenume" required/>
             <input type="email" placeholder="Email..." name="email" required/>
             <input type="password" value="secret" required/>
-            <label for="pozaProfil" >Alege o poza de profil:</label>
+            <label for="pozaProfil" >Choose a profile picture:</label>
             <input type="file" id="pozaProfil" name="poza" accept="image/png, image/jpeg"/>
-            <input type="date" placeholder="Data nasteri..." />
+            <input type="date"/>
             
-            <input type="radio" name="gen" id="Feminin"/>
-            <label for="feminin">feminin</label>
-            <input type="radio" name="gen" id="Masculin"/>
-            <label for="masculin">masculin</label>
-
-            <label>Bilete</label>
-            <label>Alege tipul biletului:</label>
-            <select>
+            <input type="radio" name="gen" id="feminin"/>
+            <label for="feminin">female</label>
+            <input type="radio" name="gen" id="masculin"/>
+            <label for="masculin">male</label>
+            <br>
+            <label>Tickets</label>
+            <br>
+            <label for=""selectare>Choose the type of the tickets:</label>
+            <br>
+            <select id="selectare">
                 <option>General Acces Basic</option>
                 <option>Risk-free</option>
                 <option>VIP</option>
             </select>
-            <label>Numar bilete</label>
+            <br>
+            <label>Choose the number of tickets:</label>
             <input type="number" max="11" required/>
             
-
             <input type="checkbox" id="terms"/>
-            <label for="Checkbox">Sunt de acord cu termenii si conditiile</label>
+            <label for="Checkbox">I agree with the terms and conditions</label>
             
             <input type="reset"/>
             <input type="submit"/>
           
           </form>
+    </div>
+    <div class="cls">
+        <h1>TICKETS</h1>
+        <span>Tickets are of several types.</span>
+        
     </div>
 </body>
 </html>
