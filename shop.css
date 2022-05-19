@@ -1,11 +1,32 @@
+*
+{
+    padding:0.5;
+    margin:0.5;
+}
+
+header {
+    position: relative;
+    height: fit-content;
+    text-align: center;
+}
+body{
+    background-color: rgb(200, 170, 228);
+    font-family: 'Courier New', Courier, monospace;
+}
 p#Hello{
     color:aqua;
+}
+  
+h1#tranzitie{
+    background-color: red;
+    transition-delay: 3s;
+  }
+  
+h1#tranzitie:hover {
+    background-color: blueviolet;
+
 }
 input {
     margin-bottom: 10px;
     display: block;
-  }
-
-form#feminin#masculin{
-    display:inline-block
 }

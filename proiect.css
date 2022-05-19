@@ -10,6 +10,19 @@ header {
     text-align: center;
 }
 
+
+  span {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
 body{
     background-color: rgb(200, 170, 228);
     font-family: 'Courier New', Courier, monospace;
