@@ -9,9 +9,10 @@
     <script src="proiect.js"></script>
 </head>
 <body>
+
     <header>
         <h1>UNTOLD</h1>
-        <img src="logo_UNTOLD.jpg" alt="Logo">
+    
     </header>
     <nav class="meniu">
         <ul>
@@ -34,12 +35,22 @@
                     </ul>
                 </nav>
             </li>
-            <li><a href="file:///D:/TW%20Folder/ProiectFinalTW/shop.html"> SHOP</a></li>
+            <li><a href="file:///D:/TW%20Folder/ProiectFinalTW/shop.html" onclick="preventF(event)"> SHOP</a>
+                <p>Paraseste pagina<input type="checkbox" id="check" </p>
+            </li>
         </ul>
     </nav>
     <h1 id="HOME">HOME</h1>
         <h2>WELCOME TO UNTOLD!</h2>
+        <div class="stocare">
+            <span class="mesaj"></span>
+            <button id="schimba"></button>
+          </div>
+          
+          <button id="sterge">Șterge detaliile</button>
+          <button id="refresh">Refresh</button>
         <div>
+
         <h4>Stiri Untold(ro)</h4>
         <div id="infoContainer"></div>
             <p class="actions">
@@ -197,15 +208,29 @@
                 <p>
                     ALOK  is  a  bonafide dance  music  superstar,  holding  the  title  of  the  second  biggest Instagram  following  of  any  electronic  artist  globally,  with  over  26  million  fans  and  20 million monthly listeners making him the most listened to Brazilian artist in the world. In 2021,he was named the 4th Best DJ in the world, according to the prestigious DJ Mag Top 100 DJ Poll. He is widely regarded as one of the most influential Brazilian artists of all  time  and  is  experiencing  his  breakout  moment  in  the  US.
                 </p>
-           <h2 id="SCENE">SCENES</h2>
-                <h3>MAIN STAGE</h3>
-                <img src="mainstage.jpg" alt="mainstage">
-                <h3>GALAXY STAGE</h3>
-                <img src="galaxystage.jpg" alt="galaxystage">
-                <h3>ALCHEMY STAGE</h3>
-                <img src="alchemystage.jpg" alt="alchemystage">
-                <h3>FORTUNE</h3>
-                <img src="fortunestage.jpg" alt="fortunestage">
+            
+           <h2 id="SCENE" class="Scene">SCENES</h2>
+           
+            <h3>MAIN STAGE</h3>
+            <div class="galerie">
+                <img class="redimensionare" src="mainstage.jpg" alt=" ">
+            </div>
+            
+            <h3>GALAXY STAGE</h3>
+            <div class="galerie">
+                <img class="redimensionare" src="galaxystage.jpg" alt=" ">
+            </div>
+                
+            <h3>ALCHEMY STAGE</h3>
+            <div class="galerie">
+                <img class="redimensionare" src="alchemystage.jpg" alt=" ">
+            </div>
+            
+            <h3>FORTUNE</h3>
+            <div class="galerie">
+                <img class="redimensionare" src="fortunestage.jpg" alt=" ">
+            </div>
+        
 
 
 </body>

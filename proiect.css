@@ -4,9 +4,10 @@
     margin:0.5;
 }
 
-header img{
+header {
     position: relative;
     height: fit-content;
+    text-align: center;
 }
 
 body{
@@ -58,4 +59,8 @@ body{
     font-size: 1.2em;
   }
 
-
+.redimensionare{
+    height: 10cm;
+    width:25cm;
+    object-fit: cover;
+}

@@ -21,9 +21,20 @@ const info = [
   window.onload = () => {
     document.getElementById('adauga').onclick = adaugaInfo;
     document.getElementById('sterge').onclick = stergeInfo;
-  
+    document.getElementById('shopU').addEventListener('click',aa);
   }
 
+   
+function preventF(event) {
+    const check=document.getElementById('check');
+    if(!check.checked){
+    event.preventDefault();
+    }
+  }
+
+
+
+  
   function adaugaInfo() {
     const articol = info[i];
     const infoElement = document.createElement('div');
@@ -51,3 +62,46 @@ const info = [
     document.querySelector('#infoContainer').lastChild?.remove();
   }
   
+ 
+  window.onload = () => {
+    const schimbaB = document.querySelector('.stocare #schimba');
+    const stergeB = document.querySelector('#sterge');
+    const refreshB = document.getElementById('refresh');
+    schimbaB.addEventListener('click', schimbaDetalii);
+    stergeB.addEventListener('click', stergeDetalii);
+    refreshB.addEventListener('click', () => {
+      window.location.reload();
+    });
+    FunctieMare();
+  }
+  
+  function FunctieMare() {
+    const MesajB = document.querySelector('.stocare .mesaj');
+    const ButonB = document.querySelector('.stocare #schimba');
+    let detaliiUser = null;
+    try {
+      detaliiUser = JSON.parse(localStorage.getItem('detaliiUser'));
+    } catch (error) {
+      detaliiUser = null;
+    }
+    if(detaliiUser) {
+      MesajB.innerHTML = `Hey, ${detaliiUser.name}!`;
+      ButonB.innerHTML = "Schimba detaliile";
+    } else {
+      MesajB.innerHTML = "Hey! What's your name?";
+      ButonB.innerHTML = "Adauga detalii";
+    }
+  }
+  
+  function schimbaDetalii() {
+    const name = prompt('Tell us your name...');
+    if(!name) return;
+    const detaliiUser = {name};
+    localStorage.setItem('detaliiUser', JSON.stringify(detaliiUser));
+    FunctieMare();
+  }
+  
+  function stergeDetalii() {
+    localStorage.removeItem('detaliiUser');
+    FunctieMare();
+  }
